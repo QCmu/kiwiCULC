@@ -139,24 +139,26 @@
 
 		// hovering a pin / clicking a pin
 		pins.forEach(function(pin) {
-			var contentItem = contentEl.querySelector('.content__item[data-space="' + pin.getAttribute('data-space') + '"]');
+		//	var contentItem = contentEl.querySelector('.content__item[data-space="' + pin.getAttribute('data-space') + '"]');
 
-			pin.addEventListener('mouseenter', function() {
-				if( !isOpenContentArea ) {
-					classie.add(contentItem, 'content__item--hover');
-				}
-			});
-			pin.addEventListener('mouseleave', function() {
-				if( !isOpenContentArea ) {
-					classie.remove(contentItem, 'content__item--hover');
-				}
-			});
+//			pin.addEventListener('mouseenter', function() {
+//				if( !isOpenContentArea ) {
+//					classie.add(contentItem, 'content__item--hover');
+//				}
+//			});
+//			pin.addEventListener('mouseleave', function() {
+//				if( !isOpenContentArea ) {
+//					classie.remove(contentItem, 'content__item--hover');
+//				}
+//			});
 			pin.addEventListener('click', function(ev) {
 				ev.preventDefault();
 				// open content for this pin
+                console.log(pin.getAttribute('data-space'));
 				openContent(pin.getAttribute('data-space'));
+                
 				// remove hover class (showing the title)
-				classie.remove(contentItem, 'content__item--hover');
+				//classie.remove(contentItem, 'content__item--hover');
 			});
 		});
 
@@ -183,14 +185,14 @@
 		});
 
 		// smaller screens: open the search bar
-		openSearchCtrl.addEventListener('click', function() {
-			openSearch();
-		});
-
-		// smaller screens: close the search bar
-		closeSearchCtrl.addEventListener('click', function() {
-			closeSearch();
-		});
+//		openSearchCtrl.addEventListener('click', function() {
+//			openSearch();
+//		});
+//
+//		// smaller screens: close the search bar
+//		closeSearchCtrl.addEventListener('click', function() {
+//			closeSearch();
+//		});
 	}
 
 	/**
@@ -424,7 +426,7 @@
 			classie.remove(activeSpaceArea, 'map__space--selected');
 		}
 		// svg area gets selected
-		classie.add(mallLevels[selectedLevel - 1].querySelector('svg > .map__space[data-space="' + spaceref + '"]'), 'map__space--selected');
+//		classie.add(mallLevels[selectedLevel - 1].querySelector('svg > .map__space[data-space="' + spaceref + '"]'), 'map__space--selected');
 	}
 
 	/**
@@ -449,6 +451,7 @@
 	function showSpace(sliding) {
 		// the content item
 		var contentItem = contentEl.querySelector('.content__item[data-space="' + spaceref + '"]');
+        console.log(spaceref);
 		// show content
 		classie.add(contentItem, 'content__item--current');
 		if( sliding ) {
