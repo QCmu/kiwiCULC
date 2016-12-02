@@ -299,17 +299,15 @@ button:focus {
 /* Delays */
 /* 1 */
 
-/*
 .levels--selected-1 .level--3,
 .levels--selected-2 .level--3,
 .levels--selected-3 .level--2,
 .levels--selected-4 .level--3,
-.levels--selected-5 .level--3,
+.levels--selected-5 .level--3
 {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
-*/
 
 .levels--selected-1 .level--2,
 .levels--selected-2 .level--current,
@@ -318,7 +316,7 @@ button:focus {
 .levels--selected-3 .level--current::after,
 .levels--selected-4 .level--current,
 .levels--selected-4 .level--current::after,
-.levels--selected-5 .level--4,
+.levels--selected-5 .level--4
 {
 	-webkit-transition-delay: 0.25s;
 	transition-delay: 0.25s;
@@ -426,7 +424,7 @@ button:focus {
 /* Level map */
 
 .map__ground {
-	fill: #d7d7dc;
+	fill: red;
 }
 
 .map__outline {

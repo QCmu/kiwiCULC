@@ -225,7 +225,7 @@
 		}, 'transform');
 		
 		// hide surroundings element
-		hideSurroundings();
+		//hideSurroundings();
 		
 		// show mall nav ctrls
 		showMallNav();
