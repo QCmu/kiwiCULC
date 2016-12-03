@@ -151,7 +151,9 @@
 //					classie.remove(contentItem, 'content__item--hover');
 //				}
 //			});
-			pin.addEventListener('click', function(ev) {
+            if(pin.getAttribute('data-category') <= 4){
+                console.log(pin.getAttribute('data-category'));
+			 pin.addEventListener('click', function(ev) {
 				ev.preventDefault();
 				// open content for this pin
                 console.log(pin.getAttribute('data-space'));
@@ -160,6 +162,7 @@
 				// remove hover class (showing the title)
 				//classie.remove(contentItem, 'content__item--hover');
 			});
+            }
 		});
 
 		// closing the content area
