@@ -438,7 +438,7 @@ button:focus {
 }
 
 .level--current .map__outline {
-	fill: #a6a3a8;
+/*	fill: #a6a3a8;*/
 }
 
 .map__tree {
