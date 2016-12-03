@@ -424,16 +424,19 @@ button:focus {
 /* Level map */
 
 .map__ground {
-	fill: red;
+	fill: #bdbebf;
 }
 
 .map__outline {
-	-webkit-transition: fill 0.3s;
-	transition: fill 0.3s;
-	fill: #bbb;
+/*
+	//-webkit-transition: fill 0.3s;
+	//transition: fill 0.3s;
+	//fill: #bbb;
+*/
+    fill-opacity:0.8;
+    
 }
 
-.level:hover .map__outline,
 .level--current .map__outline {
 	fill: #a6a3a8;
 }
