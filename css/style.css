@@ -424,7 +424,7 @@ button:focus {
 /* Level map */
 
 .map__ground {
-	fill: #aec2af;
+	fill: black;
 }
 
 .map__outline {
@@ -433,7 +433,7 @@ button:focus {
 	//transition: fill 0.3s;
 	//fill: #bbb;
 */
-    fill-opacity:0.8;
+    fill-opacity:0.85;
     
 }
 
@@ -507,20 +507,20 @@ button:focus {
 }
 
 .content__item[data-category='1'] {
-	background-color: #7ED321;
+	background-color: #93d048;
 }
 
 .content__item[data-category='2'] {
-	background-color:  #f8e81c;
+	background-color:  #F4CE00;
 }
 
 .content__item[data-category='3'] {
-	background-color: #ff9600;
+	background-color: #f5a623;
     
 }
 
 .content__item[data-category='4']  {
-	background-color:  #ff2851;
+	background-color:  #df5c5c;
 }
 
 
@@ -846,24 +846,25 @@ line-height: 1.5;
 	transition-delay: 0.45s;
 }
 .pin[data-category='1'] .icon--pin {
-	fill: #7ED321;
+	fill: #93D048;
 }
 .pin[data-category='2'] .icon--pin {
-	fill: #f8e81c;
+	fill: #F4CE00;
 }
 .pin[data-category='3'] .icon--pin {
-	fill: #ff9600;
+	fill: #F5A623;
 }
 .pin[data-category='4'] .icon--pin {
-	fill: #ff2851;
+	fill: #DF5C5C;
 }
-/* startbuck color*/
+
+/* starbuck color*/
 .pin[data-category='5'] .icon--pin {
 	fill: #ddd;
 }
 /* elevator color*/
 .pin[data-category='6'] .icon--pin {
-	fill: #2980B9;
+	fill: #3EAADE;
 }
 
 .pin--active .icon--pin {
