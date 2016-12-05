@@ -117,8 +117,8 @@ button:focus {
 }
 
 .mall.mall--content-open {
-    -webkit-transform: translate3d(0, -25%, 0) scale3d(0.8, 0.8, 1);
-    transform: translate3d(0, -25%, 0) scale3d(0.8, 0.8, 1);
+    -webkit-transform: translate3d(0, -18%, 0) scale3d(0.8, 0.8, 1);
+    transform: translate3d(0, -18%, 0) scale3d(0.8, 0.8, 1);
 }
 
 
@@ -350,9 +350,9 @@ button:focus {
 /* Current level */
 
 .level.level--current {
-    -webkit-transform: translateZ(15vmin) rotate3d(0, 0, 1, 20deg);
+    -webkit-transform: translateZ(20vmin) rotate3d(0, 0, 1, 20deg);
     /* go to center */
-    transform: translateZ(15vmin) rotate3d(0, 0, 1, 20deg);
+    transform: translateZ(20vmin) rotate3d(0, 0, 1, 20deg);
 }
 
 .surroundings--rotate,
