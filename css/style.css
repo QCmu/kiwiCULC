@@ -931,6 +931,7 @@ svg.icon--logo{
 .pin--3-6 { top: 36vmin; left: 46vmin; }
 .pin--3-7 { top: 56vmin; left: 76vmin; }
 .pin--3-8 { top: 36vmin; left: 53vmin; }
+.pin--3-9 { top: 53vmin; left: 46vmin; }
 
 /* Pins for floor 4 */
 .pin--4-1 { top: 15vmin; left: 15vmin; }
@@ -940,12 +941,14 @@ svg.icon--logo{
 .pin--4-5 { top: 37vmin; left: 44vmin; }
 .pin--4-6 { top: 59vmin; left: 50vmin; }
 .pin--4-7 { top: 36vmin; left: 52vmin; }
+.pin--4-8 { top: 53vmin; left: 46vmin; }
 
 
 /* Pins for floor 5 */
 .pin--5-1 { top: 37vmin; left: 44vmin; }
 .pin--5-2 { top: 59vmin; left: 50vmin; }
 .pin--5-3 { top: 36vmin; left: 52vmin; }
+.pin--5-4 { top: 30vmin; left: 46vmin; }
 
 /* Mobile compatability */
 .open-search,
