@@ -140,10 +140,10 @@ button:focus {
 }
 
 .surroundings {
-    width: 180vmin;
+    width: 170vmin;
     /* double of mall map */
     height: 128vmin;
-    margin: -58vmin 0 0 -80vmin;
+    margin: -64vmin 0 0 -80vmin;
     pointer-events: none;
     -webkit-transition: opacity 0.8s;
     transition: opacity 0.8s;
