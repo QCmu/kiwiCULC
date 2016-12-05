@@ -172,11 +172,18 @@ button:focus {
 	-webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
 	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-9vmin);
 }
-.surroundings{
+.surroundings--whole{
     -webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
     transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
+    -webkit-transition:  -webkit-transform 1s;
+	transition:  transform 1s;
 }
-
+.surroundings--rotate{
+    -webkit-transform:  rotateX(70deg) rotateZ(-25deg) translateZ(-15vmin);
+    transform: rotateX(70deg) rotateZ(-25deg) translateZ(-15vmin);
+    -webkit-transition:  -webkit-transform 1s;
+	transition:  transform 1s;
+}
 .level {
 	position: relative;
 	width: 100%;
@@ -336,6 +343,14 @@ button:focus {
 	-webkit-transform: translateZ(15vmin) rotate3d(0,0,1,20deg);
 	/* go to center */
 	transform: translateZ(15vmin) rotate3d(0,0,1,20deg);
+}
+
+.surroundings--rotate,
+.surroundings--rotate::after, 
+.surroundings-whole,.surroundings-whole::after{
+    -webkit-transition-delay: 0.45s;
+	transition-delay: 0.45s;
+    
 }
 
 /* Navigation classes */

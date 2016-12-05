@@ -227,9 +227,10 @@
 			isExpanded = true;
 		}, 'transform');
 		
-		// hide surroundings element
+		//  surroundings element
 		//hideSurroundings();
-		
+		rotateSurroundings();
+        
 		// show mall nav ctrls
 		showMallNav();
 
@@ -312,16 +313,23 @@
 	 */
 	function showSurroundings() {
 		mallSurroundings.forEach(function(el) {
-			classie.remove(el, 'surroundings--hidden');
+			classie.remove(el, 'surroundings--rotate');
+            classie.add(el, 'surroundings--whole');
 		});
 	}
 
 	/**
-	 * Hide the surroundings level
+	 * Hide / Rotate the surroundings level
 	 */
 	function hideSurroundings() {
 		mallSurroundings.forEach(function(el) {
 			classie.add(el, 'surroundings--hidden');
+		});
+	}
+    function rotateSurroundings() {
+		mallSurroundings.forEach(function(el) {
+            classie.remove(el, 'surroundings--whole');
+			classie.add(el, 'surroundings--rotate');
 		});
 	}
 
