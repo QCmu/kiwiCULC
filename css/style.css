@@ -544,6 +544,7 @@ button:focus {
     position: absolute;
 	top: 10vh;
     left: 55vw;
+    width: 100%;
 /*	margin: 4em auto;*/
 /*	max-width: 50vmax;*/
 /*    margin-top: 10vh;*/
